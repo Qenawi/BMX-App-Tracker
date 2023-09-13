@@ -39,7 +39,7 @@ jobs:
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
         with:
-          github_token: "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"
+          github_token: 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
           branch: main
 
          
