@@ -15,3 +15,6 @@ This README displays insights about the app's stars and version.
 ## Generated Plot
 
 ![Generated Plot](plots/generated_plot.png)
+
+## app rate status from 21 - 23 as per AppFolio 
+![](Screenshot%202023-09-13%20055756.png)
