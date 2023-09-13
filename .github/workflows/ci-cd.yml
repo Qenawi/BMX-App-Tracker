@@ -1,0 +1,39 @@
+name: Generate and Store Plot
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Download CSV File
+        run: curl -o data.csv https://example.com/path/to/your/csv/file.csv  # Replace with the actual CSV URL
+
+      - name: Install dependencies
+        run: pip install pandas matplotlib
+
+      - name: Generate Plot
+        run: python scripts/generate_plot.py
+
+      - name: Move Plot to Plots Directory
+        run: mv generated_plot.png plots/
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add plots/
+          git commit -m "Add generated plot"
+          git push
