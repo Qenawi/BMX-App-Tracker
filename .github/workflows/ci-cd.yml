@@ -25,7 +25,7 @@ jobs:
         run: python scripts/generate_plot.py
 
       - name: Debugging: Print current working directory
-        run: echo "Current directory: $(pwd)"
+        run: pwd
 
       - name: Debugging: List files in the current directory
         run: ls
