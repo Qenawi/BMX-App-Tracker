@@ -30,4 +30,4 @@ for i, version in enumerate(version_column):
     plt.annotate(version, (date_column[i], star_columns['Total Stars'][i]))
 
 plt.tight_layout()
-plt.savefig('plots/generated_plot.png')  # Save the plot to a fil
+plt.savefig('generated_plot.png')  # Save the plot to a fil
