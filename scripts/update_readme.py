@@ -1,3 +1,6 @@
+import pandas as pd
+
+
 # Read the CSV data and calculate insights
 def calculate_insights(data):
     highest_stars = data[['5 star', '4 star', '3 star', '2 star', '1 star']].max().max()
