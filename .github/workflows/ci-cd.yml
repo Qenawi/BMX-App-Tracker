@@ -18,9 +18,6 @@ jobs:
         with:
           python-version: 3.x
 
-      - name: Download CSV File
-        run: curl -o data.csv https://example.com/path/to/your/csv/file.csv  # Replace with the actual CSV URL
-
       - name: Install dependencies
         run: pip install pandas matplotlib
 
