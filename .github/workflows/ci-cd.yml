@@ -42,4 +42,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git add plots/
           git commit -m "Add generated plot"
+          echo "GitHub Token: ${{ secrets.PAT }}"
           git push https://${{ secrets.PAT }}@github.com/Qenawi/BMX-App-Tracker.git HEAD:main
