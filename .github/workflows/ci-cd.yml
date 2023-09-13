@@ -24,16 +24,16 @@ jobs:
       - name: Generate Plot
         run: python scripts/generate_plot.py
 
-      - name: Debugging: Print current working directory
+      - name: Debugging Print current working directory
         run: pwd
 
-      - name: Debugging: List files in the current directory
+      - name: Debugging List files in the current directory
         run: ls
 
       - name: Move Plot to Plots Directory
         run: mv generated_plot.png plots/
 
-      - name: Debugging: Print data content
+      - name: Debugging Print data content
         run: cat data/data.csv
 
       - name: Commit and Push Changes
