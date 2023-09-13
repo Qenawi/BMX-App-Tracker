@@ -19,7 +19,7 @@ jobs:
           python-version: 3.x
 
       - name: Install dependencies
-        run: pip install pandas matplotlib githubpy
+        run: pip install pandas matplotlib PyGithub
 
       - name: Generate Plot
         run: python scripts/generate_plot.py
