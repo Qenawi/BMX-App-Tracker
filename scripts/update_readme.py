@@ -1,5 +1,4 @@
 import pandas as pd
-from github import Github
 
 # Read the CSV data and calculate insights
 def calculate_insights(data):
@@ -23,13 +22,3 @@ readme_content = readme_content.replace('{{LOWEST_STARS}}', str(lowest_stars))
 
 with open('README.md', 'w') as readme_file:
     readme_file.write(readme_content)
-
-# Authenticate with your GitHub token
-g = Github('YOUR_GITHUB_TOKEN')
-
-# Get the repository
-repo = g.get_repo('YOUR_USERNAME/YOUR_REPOSITORY')
-
-# Commit and push changes to the README
-repo.get_contents('README.md')
-repo.update_file('README.md', 'Updated README with insights', readme_content)
