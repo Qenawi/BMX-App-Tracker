@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from io import StringIO
 
 # Read the CSV data from a file
-data = pd.read_csv('path/to/your/csv/file.csv', delimiter=';')
+data = pd.read_csv('data/data.csv', delimiter=';')
 
 # Extract relevant columns
 date_column = data['Date']
