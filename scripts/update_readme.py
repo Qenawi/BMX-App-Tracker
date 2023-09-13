@@ -1,6 +1,5 @@
 import pandas as pd
 
-
 # Read the CSV data and calculate insights
 def calculate_insights(data):
     highest_stars = data[['5 star', '4 star', '3 star', '2 star', '1 star']].max().max()
@@ -18,14 +17,16 @@ highest_stars, lowest_stars = calculate_insights(data)
 version = data['Version'].iloc[-1]
 date = data['Date'].iloc[-1]
 
-# Update the README with insights, version, and date
-with open('README.md', 'r') as readme_file:
-    readme_content = readme_file.read()
+# Read the README template
+with open('README_template.md', 'r') as template_file:
+    template_content = template_file.read()
 
-readme_content = readme_content.replace('{{HIGHEST_STARS}}', str(highest_stars))
-readme_content = readme_content.replace('{{LOWEST_STARS}}', str(lowest_stars))
-readme_content = readme_content.replace('{{VERSION}}', version)
-readme_content = readme_content.replace('{{DATE}}', date)
+# Replace placeholders with actual values
+template_content = template_content.replace('{{HIGHEST_STARS}}', str(highest_stars))
+template_content = template_content.replace('{{LOWEST_STARS}}', str(lowest_stars))
+template_content = template_content.replace('{{VERSION}}', version)
+template_content = template_content.replace('{{DATE}}', date)
 
+# Write the updated content to the README
 with open('README.md', 'w') as readme_file:
-    readme_file.write(readme_content)
+    readme_file.write(template_content)
