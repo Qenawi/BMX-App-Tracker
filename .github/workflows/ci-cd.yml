@@ -42,4 +42,4 @@ jobs:
           git config --local user.name "GitHub Action"
           git add plots/
           git commit -m "Add generated plot"
-          git push https://${{ secrets.pat }}@github.com/Qenawi/BMX-App-Tracker.git HEAD:mai
+          git push https://${{ secrets.PAT }}@github.com/Qenawi/BMX-App-Tracker.git HEAD:mai
