@@ -4,6 +4,9 @@ from io import StringIO
 
 # Read the CSV data from a file
 data = pd.read_csv('data/data.csv', delimiter=';')
+print("--------------------")
+print(data)
+print("--------------------")
 
 # Extract relevant columns
 date_column = data['Date']
