@@ -6,7 +6,7 @@ This plot shows the monthly progress measured by star count with additional info
 
 ## Insights
 
-- Highest Star Count: {{HIGHEST_STARS}}
-- Lowest Star Count: {{LOWEST_STARS}}
+- Highest Star Count: 1763
+- Lowest Star Count: 0
 
 This section provides insights into the highest and lowest star counts over the dataset's time range.
