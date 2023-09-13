@@ -36,14 +36,10 @@ jobs:
       - name: Debugging Print data content
         run: cat data/data.csv
 
-      - name: Commit and Push Changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add plots/
-          git commit -m "Add generated plot"
-          echo "GitHub Token: ${{ secrets.PAT }}"
-          git push origin main
-        env:
-           GITHUB_TOKEN: ${{ secrets.PAT }}
+      - name: GitHub Push
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.PAT }}
+          branch: main
+
          
