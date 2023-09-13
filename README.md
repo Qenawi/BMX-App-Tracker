@@ -2,12 +2,15 @@
 
 This README displays insights about the app's stars and version.
 
-## Insights
+### Insights
 
-- Highest Stars: 1763
-- Lowest Stars: 0
-- Version: 2.2.0.13
-- Date: 2023-09-01 - 2023-09-11
+- Highest Star Count: 1763
+  - Version: {{HIGHEST_VERSION}}
+  - Date: {{HIGHEST_DATE}}
+
+- Lowest Star Count: 0
+  - Version: {{LOWEST_VERSION}}
+  - Date: {{LOWEST_DATE}}
 
 ## Generated Plot
 
