@@ -33,8 +33,8 @@ jobs:
       - name: Move Plot to Plots Directory
         run: mv generated_plot.png plots/
 
-      - name: Debugging Print data content
-        run: cat data/data.csv
+      - name: Update README
+        run: python scripts/update_readme.py
 
       - name: Commit and Push Changes
         run: |
