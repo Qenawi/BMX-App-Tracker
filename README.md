@@ -1,12 +1,14 @@
-## Generated Plot
+# App Stars and Version Insight
 
-![Generated Plot](plots/generated_plot.png)
-
-This plot shows the monthly progress measured by star count with additional information about the version number.
+This README displays insights about the app's stars and version.
 
 ## Insights
 
-- Highest Star Count: 1763
-- Lowest Star Count: 0
+- Highest Stars: 1763
+- Lowest Stars: 0
+- Version: 2.2.0.13
+- Date: 2023-09-01 - 2023-09-11
 
-This section provides insights into the highest and lowest star counts over the dataset's time range.
+## Generated Plot
+
+![Generated Plot](plots/generated_plot.png)
