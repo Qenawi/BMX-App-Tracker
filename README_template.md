@@ -2,12 +2,15 @@
 
 This README displays insights about the app's stars and version.
 
-## Insights
+### Insights
 
-- Highest Stars: {{HIGHEST_STARS}}
-- Lowest Stars: {{LOWEST_STARS}}
-- Version: {{VERSION}}
-- Date: {{DATE}}
+- Highest Star Count: {{HIGHEST_STARS}}
+  - Version: {{HIGHEST_VERSION}}
+  - Date: {{HIGHEST_DATE}}
+
+- Lowest Star Count: {{LOWEST_STARS}}
+  - Version: {{LOWEST_VERSION}}
+  - Date: {{LOWEST_DATE}}
 
 ## Generated Plot
 
